@@ -1,3 +1,3 @@
 #!/bin/bash
 
-java -jar /mnt/second/Keyper/Keyper.jar
+java -jar $HOME/.gits/keyper-git/Keyper.jar
