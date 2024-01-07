@@ -1,3 +1,5 @@
 #!/bin/bash
 
-java -jar $HOME/.gits/keyper-git/Keyper.jar
+installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
+
+java -jar $installed_dir/Keyper.jar
