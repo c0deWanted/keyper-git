@@ -1,0 +1,5 @@
+#!/bin/bash
+
+installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
+
+sudo ln -s $installed_dir/keyper /usr/local/bin
