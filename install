@@ -1,9 +1,7 @@
 #!/bin/bash
-
 installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
-
-sudo ln -s $installed_dir/keyper /usr/local/bin
 touch keyper
 echo "#!/bin/bash" >> keyper
 echo "java -jar "$installed_dir"/Keyper.jar" >> keyper
 chmod +x keyper
+sudo ln -s $installed_dir/keyper /usr/local/bin
